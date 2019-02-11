@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="HR" parallel="none" >
+
+ <test name="chrome" >
+ <parameter name="browser" value="chrome" />
+ <!-- login parameters -->
+ <parameter name="Employee_Username" value="username"/>
+ <parameter name="Employee_Password" value="password"/>
+ <!-- Add vacation employee parameters -->
+ <parameter name="vacation_startdate" value="31/1/2019"></parameter>
+ <parameter name="vacation_enddate" value="31/1/2019"></parameter>
+ <parameter name="vacation_type" value="اجازة من غير مرفق"></parameter>
+ <!-- Edit vacation employee parameters -->
+ <parameter name="vacation_type_edit" value="اجازة مع مرفق"></parameter>
+ <parameter name="vacation_edit_attachment" value="absolute path \\img.jpg"></parameter>
+ <parameter name="vacation_edit_startdate" value="26/01/2019"></parameter>
+ <parameter name="vacation_edit_startdate2" value="06/02/2019"></parameter>
+ <parameter name="vacation_edit_enddate" value="01/02/2019"></parameter>
+ <parameter name="vacation_edit_enddate2" value="01/02/2020"></parameter>
+ <!-- Add mandate employee parameters -->
+ <parameter name="mandate_startdate" value="31/1/2019"></parameter>
+ <parameter name="mandate_enddate" value="31/1/2019"></parameter>
+ <parameter name="mandate_type" value="خارجي"></parameter>
+ <parameter name="mandate_place" value="امريكه"></parameter>
+  <!-- Edit mandate employee parameters -->
+ <parameter name="mandate_add_notice" value="automation ya 7alwa"></parameter>
+ <parameter name="mandate_edit_startdate" value="01/01/2018"></parameter>
+ <parameter name="mandate_edit_startdate1" value="08/01/2019"></parameter>
+ <parameter name="mandate_edit_enddate" value="15/09/2019"></parameter>
+ <classes>
+ <class name="testNG_HR.login" />
+ <class name="testNG_HR.Employee">
+  <methods>
+                <include name="Add_vacation_Request" />
+                <include name="Add_another_vacation_Request" />
+                <include name="Edit_vacation_Request"/>
+                <include name="Edit_vacation_Startdate_Request"/>
+                <include name="Edit_vacation_Startdate_Request2"/>
+                <include name="Edit_vacation_enddate_Request"/>
+                <include name="Edit_vacation_enddate_Request2"/>
+                <include name="Delete_vacation_Request"/>
+                <include name="Add_Mandate_Request"/>
+                <include name="Add_ِِAnother_Mandate_Request"/>
+                <include name="Edit_Mandate_Request"/>
+                <include name="Edit_Mandate_startdate"/>
+                <include name="Edit_Mandate_startdate1"/>
+                <include name="Edit_Mandate_enddate"/>
+                <include name="Delete_Mandate_Request" />
+   </methods>
+ </class>
+ </classes> 
+</test>
+
+  <test name="firefox" >
+  <parameter name="browser" value="firefox" />
+ <parameter name="Employee_Username" value="username"/>
+ <parameter name="Employee_Password" value="password"/>
+ <!-- Add vacation employee parameters -->
+ <parameter name="vacation_startdate" value="31/1/2019"></parameter>
+ <parameter name="vacation_enddate" value="31/1/2019"></parameter>
+ <parameter name="vacation_type" value="اجازة من غير مرفق"></parameter>
+ <!-- Edit vacation employee parameters -->
+ <parameter name="vacation_type_edit" value="اجازة مع مرفق"></parameter>
+ <parameter name="vacation_edit_attachment" value="absolute path \\img.jpg"></parameter>
+ <parameter name="vacation_edit_startdate" value="26/01/2019"></parameter>
+ <parameter name="vacation_edit_startdate2" value="06/02/2019"></parameter>
+ <parameter name="vacation_edit_enddate" value="01/02/2019"></parameter>
+ <parameter name="vacation_edit_enddate2" value="01/02/2020"></parameter>
+ <!-- Add mandate employee parameters -->
+ <parameter name="mandate_startdate" value="31/1/2019"></parameter>
+ <parameter name="mandate_enddate" value="31/1/2019"></parameter>
+ <parameter name="mandate_type" value="خارجي"></parameter>
+ <parameter name="mandate_place" value="امريكه"></parameter>
+  <!-- Edit mandate employee parameters -->
+ <parameter name="mandate_add_notice" value="automation ya 7alwa"></parameter>
+ <parameter name="mandate_edit_startdate" value="01/01/2018"></parameter>
+ <parameter name="mandate_edit_startdate1" value="08/01/2019"></parameter>
+ <parameter name="mandate_edit_enddate" value="15/09/2019"></parameter>
+ 
+ <classes>
+  <class name="testNG_HR.login"/> 
+  <class name="testNG_HR.Employee"> 
+ <methods>
+                <include name="Add_vacation_Request" />
+                <include name="Add_another_vacation_Request" />
+                <include name="Edit_vacation_Request"/>
+                <include name="Edit_vacation_Startdate_Request"/>
+                <include name="Edit_vacation_Startdate_Request2"/>
+                <include name="Edit_vacation_enddate_Request"/>
+                <include name="Edit_vacation_enddate_Request2"/>
+                <include name="Delete_vacation_Request"/>
+                <include name="Add_Mandate_Request"/>
+                <include name="Add_ِِAnother_Mandate_Request"/>
+                <include name="Edit_Mandate_Request"/>
+                <include name="Edit_Mandate_startdate"/>
+                <include name="Edit_Mandate_startdate1"/>
+                <include name="Edit_Mandate_enddate"/>
+                <include name="Delete_Mandate_Request" />
+   </methods>
+   </class>
+ </classes> 
+</test> 
+
+</suite>
