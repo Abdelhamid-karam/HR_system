@@ -1,6 +1,6 @@
 # HR_system
 Here is a sample of my first selenium project using java and TestNG framwork that used on HR system that run test cases on both browsers (chrome-firfox),
-so have a look and tell me your opinion as for first project :D 
+so have a look and tell me your opinion as for first project ;)
 --------
  AS for (employee.java) class that is attched their is 6 functions that employee can do  
 1- (add-edit-delete) vacation request 
