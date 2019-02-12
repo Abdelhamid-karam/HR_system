@@ -29,7 +29,6 @@
  <parameter name="mandate_edit_startdate1" value="08/01/2019"></parameter>
  <parameter name="mandate_edit_enddate" value="15/09/2019"></parameter>
  <classes>
- <class name="testNG_HR.login" />
  <class name="testNG_HR.Employee">
   <methods>
                 <include name="Add_vacation_Request" />
@@ -79,7 +78,6 @@
  <parameter name="mandate_edit_enddate" value="15/09/2019"></parameter>
  
  <classes>
-  <class name="testNG_HR.login"/> 
   <class name="testNG_HR.Employee"> 
  <methods>
                 <include name="Add_vacation_Request" />
